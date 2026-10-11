@@ -1,0 +1,1 @@
+﻿export type StudyTask={id:string;week:number;plannedDate:string;dayName:string;startTime:string;endTime:string;subject:string;title:string;concepts:string;practice:string;interview:string;goal:string;status:"Pending"|"Ongoing"|"Completed";notes:string;completedDate:string|null;carriedOver:boolean};
