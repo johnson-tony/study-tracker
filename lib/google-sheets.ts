@@ -1,8 +1,8 @@
 import { google } from "googleapis";
 import type { StudyTask } from "@/types/task";
 
-const ID = process.env.GOOGLE_SHEETS_SPREADSHEET_ID || "1LTMWjHtfB0q50vLc1wc-vS41-Q75Ym4BFKweyG1vwz4";
-const GID = Number(process.env.GOOGLE_SHEETS_GID || "262214206");
+const ID = process.env.GOOGLE_SHEETS_SPREADSHEET_ID || "1Lmvu1hP0X-1v4i6CjBvYs3JXgK_WSCkvcXq5leZ9UV8";
+const GID = Number(process.env.GOOGLE_SHEETS_GID || "1195241681");
 const aliases: Record<keyof Omit<StudyTask,"id">, string[]> = {
   week:["week"], plannedDate:["date","planned date","planned date (yyyy-mm-dd)"], dayName:["day","day name"], startTime:["start time"], endTime:["end time"], subject:["subject","category"], title:["task title","task name","title"], concepts:["concepts to learn","concepts"], practice:["hands-on practice","practice","hands on practice"], interview:["interview practice","interview question","interview questions"], goal:["completion goal","goal"], status:["status"], notes:["notes / mistakes","notes/mistakes","notes","mistakes / reflection notes"], completedDate:["completed date","completion date"], carriedOver:["carried over","carry-over"]
 };
